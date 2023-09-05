@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@hapi/boom": "^10.0.1",
+    "@heroicons/react": "^2.0.18",
     "@types/node": "20.5.9",
     "@types/react": "18.2.21",
     "@types/react-dom": "18.2.7",
@@ -23,6 +25,7 @@
     "uuid": "^9.0.0"
   },
   "devDependencies": {
+    "@types/boom": "^7.3.2",
     "@types/pg": "^8.10.2",
     "@types/uuid": "^9.0.3"
   }

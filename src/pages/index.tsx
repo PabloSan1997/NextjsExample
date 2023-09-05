@@ -1,12 +1,17 @@
-import { UseContext } from "@/context/taskContext"
-import Link from 'next/link';
+import { Contenedor } from "@/components/Contenedor";
+import { Formulario } from "@/components/Formulario";
+import { Header } from "@/components/Header";
+
 
 
 export default function Home() {
-  const {hola, setHola} = UseContext();
+  
   return (
-   <div className="add">
-    hola mundo
-   </div>
+   <>
+    <Header/>
+    <Formulario/>
+    <Contenedor/>
+    
+   </>
   )
 }
