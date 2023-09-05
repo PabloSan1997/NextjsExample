@@ -35,6 +35,10 @@ export default async function handler(
       const tarea = await controllers.editarTarea(data);
       res.status(200).json(tarea);
     }
+    else{
+      const data = await controllers.leerDatos();
+      res.status(200).json(data);
+    }
   } catch (error) {
     boomHandle(boom.badImplementation('Problemas para generar esta accion'), res);
   }
